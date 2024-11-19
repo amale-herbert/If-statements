@@ -1,0 +1,8 @@
+public class PrintEvenNumbers {
+    public static void main(String[] args) {
+        // Loop through numbers from 20 to 0, decrementing by 2
+        for (int number = 20; number >= 0; number -= 2) {
+            System.out.println(number); // Print the even number
+        }
+    }
+}
