@@ -1,0 +1,25 @@
+public class PrintPrimeNumbers {
+    public static void main(String[] args) {
+        System.out.println("Prime numbers from 0 to 41:");
+
+        // Loop through numbers from 0 to 41
+        for (int number = 2; number <= 41; number++) {
+            if (isPrime(number)) {
+                System.out.println(number); // Print the prime number
+            }
+        }
+    }
+
+    // Method to check if a number is prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false; // 0 and 1 are not prime numbers
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false; // num is divisible by i, so it's not prime
+            }
+        }
+        return true; // num is prime
+    }
+}
