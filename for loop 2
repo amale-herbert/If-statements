@@ -1,0 +1,11 @@
+public class PrintMultiplesOfFive {
+    public static void main(String[] args) {
+        // Loop through numbers from 10 to 75
+        for (int number = 10; number <= 75; number++) {
+            // Check if the number is a multiple of 5
+            if (number % 5 == 0) {
+                System.out.println(number); // Print the multiple of 5
+            }
+        }
+    }
+}
