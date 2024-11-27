@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user for the upper limit
+        System.out.print("Enter the upper limit: ");
+        int upperLimit = scanner.nextInt();
+        
+        System.out.println("Even numbers from 0 to " + upperLimit + ":");
+        
+        // Loop through numbers from 0 to upperLimit
+        for (int i = 0; i <= upperLimit; i++) {
+            if (i % 2 == 0) { // Check if the number is even
+                System.out.print(i + " "); // Print the even number
+            }
+        }
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
